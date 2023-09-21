@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;700&family=Roboto:wght@100;300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  padding: 15px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(57, 100, 168);
+  border-bottom: 1px solid rgba(66, 66, 66, 0.5058823529);
+}
+.header img {
+  width: 150px;
+}
+.header ul {
+  list-style: none;
+}
+.header ul li {
+  float: left;
+  padding: 0 20px;
+}
+.header ul li a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+.header ul li a:hover {
+  text-decoration: underline;
+  color: rgb(210, 211, 213);
+}
+.header .header-social {
+  display: flex;
+}
+.header .header-social .social-1 {
+  margin-left: 20px;
+}
+.header .header-social .social-1 img {
+  width: 30px;
+  height: 30px;
+}
+
+main {
+  height: 75vh;
+  background-color: #fff;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.785), rgba(255, 255, 255, 0.785)), url("../assets/img/ban1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 0;
+}
+main .main-content .ofer-1 h1 {
+  text-align: center;
+  color: #1c1b1b;
+  font-weight: 600;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+main .main-content .ofer-1 h1 span {
+  color: rgb(0, 140, 255);
+}
+main .main-content .ofer-1 p {
+  color: rgb(73, 73, 73);
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+main .main-content .ofer-2 {
+  display: flex;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+main .main-content .ofer-2 .lista {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+main .main-content .ofer-2 .lista ul {
+  list-style: none;
+}
+main .main-content .ofer-2 .lista ul .li1 {
+  color: rgb(43, 144, 226);
+  font-weight: 700;
+}
+main .main-content .ofer-2 .lista ul .li2 {
+  color: rgb(43, 144, 226);
+  font-weight: 700;
+}
+main .main-content .ofer-2 .lista ul .li3 {
+  color: rgb(43, 144, 226);
+  font-weight: 700;
+}
+main .main-content .ofer-2 .lista ul .li4 {
+  color: rgb(43, 144, 226);
+  font-weight: 700;
+}
+main .main-content .ofer-2 .btn-start {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  background-color: #1cb11c;
+  border-radius: 20;
+  padding: 10px 20px;
+}
+main .main-content .ofer-2 .btn-start:hover {
+  opacity: 0.7;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.instrucciones {
+  text-align: center;
+  margin-top: 40px;
+}
+.instrucciones h2 {
+  text-transform: uppercase;
+}
+.instrucciones .llenado {
+  display: flex;
+  justify-content: space-between;
+}
+.instrucciones .llenado .step-1 {
+  width: 100%;
+  border: 1px solid #f8f3f3;
+  box-shadow: 0px 0px 0.1px 0.1px rgba(0, 0, 0, 0.6);
+  margin: 10px 10px;
+  border-radius: 20px;
+  padding: 20px 5px;
+}
+.instrucciones .llenado .step-1 h3 {
+  margin: 20px 0px;
+}
+.instrucciones .llenado .step-1 img {
+  width: 80%;
+  height: 180px;
+}
+
+.tips {
+  text-align: center;
+  background-color: rgb(57, 100, 168);
+  margin: 20px 0px;
+  padding-bottom: 20px;
+}
+.tips h2 {
+  color: rgb(210, 211, 213);
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+.tips .tips-content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.tips .tips-content .tip-item {
+  position: relative;
+  display: flex;
+  width: 95%;
+  height: 160px;
+  margin-left: 10px;
+  margin-top: 20px;
+  background-color: rgb(247, 199, 10);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.tips .tips-content .tip-item .tip-item-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(57, 100, 168);
+  scale: 0;
+}
+.tips .tips-content .tip-item .tip-item-content p {
+  color: white;
+  width: 90%;
+}
+.tips .tips-content .tip-item .tip-item-content:hover {
+  scale: 1;
+  transition-duration: 1s;
+}
+.tips .tips-content .tip-item :hover ~ .tip-item-content {
+  transition-duration: 1s;
+  scale: 1;
+}
+
+footer {
+  background-color: #1c1b1b;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(210, 211, 213);
+}
+footer .footer-content .footer-item {
+  display: flex;
+  align-items: center;
+}
+footer .footer-content .footer-item span {
+  display: inline;
+  width: 40px;
+  margin: 0px 10px;
+  padding: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
